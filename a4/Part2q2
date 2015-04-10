@@ -1,0 +1,39 @@
+Script started on Fri 11 Apr 2014 10:58:00 PM EDT
+% sudo tcpdump -N port 10345 and 'tcp[13:1]&3 !=0'
+[sudo] password for swankhad: 
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 65535 bytes
+
+
+23:01:41.828938 IP somethingelse.52121 > something.10345: Flags [S], seq 148680097, win 14600, options [mss 1460,sackOK,TS val 1127033018 ecr 0,nop,wscale 5], length 0
+23:01:41.829016 IP something.10345 > somethingelse.52121: Flags [S.], seq 2021541733, ack 148680098, win 14480, options [mss 1460,sackOK,TS val 1128388086 ecr 1127033018,nop,wscale 5], length 0
+23:01:41.829216 IP somethingelse.52121 > something.10345: Flags [F.], seq 1, ack 1, win 457, options [nop,nop,TS val 1127033018 ecr 1128388086], length 0
+23:01:41.829280 IP something.10345 > somethingelse.52121: Flags [F.], seq 1, ack 2, win 453, options [nop,nop,TS val 1128388086 ecr 1127033018], length 0
+23:01:46.353468 IP somethingelse.52122 > something.10345: Flags [S], seq 1942838077, win 14600, options [mss 1460,sackOK,TS val 1127034149 ecr 0,nop,wscale 5], length 0
+23:01:46.353531 IP something.10345 > somethingelse.52122: Flags [S.], seq 2400362116, ack 1942838078, win 14480, options [mss 1460,sackOK,TS val 1128389217 ecr 1127034149,nop,wscale 5], length 0
+23:01:46.353884 IP somethingelse.52122 > something.10345: Flags [F.], seq 1, ack 1, win 457, options [nop,nop,TS val 1127034149 ecr 1128389217], length 0
+23:01:46.353915 IP something.10345 > somethingelse.52122: Flags [F.], seq 1, ack 2, win 453, options [nop,nop,TS val 1128389217 ecr 1127034149], length 0
+23:01:50.370871 IP somethingelse.52123 > something.10345: Flags [S], seq 2321855070, win 14600, options [mss 1460,sackOK,TS val 1127035154 ecr 0,nop,wscale 5], length 0
+23:01:50.370927 IP something.10345 > somethingelse.52123: Flags [S.], seq 712845417, ack 2321855071, win 14480, options [mss 1460,sackOK,TS val 1128390221 ecr 1127035154,nop,wscale 5], length 0
+23:01:50.371244 IP somethingelse.52123 > something.10345: Flags [F.], seq 1, ack 1, win 457, options [nop,nop,TS val 1127035154 ecr 1128390221], length 0
+23:01:50.371461 IP something.10345 > somethingelse.52123: Flags [F.], seq 1, ack 2, win 453, options [nop,nop,TS val 1128390222 ecr 1127035154], length 0
+23:01:53.389131 IP somethingelse.52124 > something.10345: Flags [S], seq 2367408509, win 14600, options [mss 1460,sackOK,TS val 1127035908 ecr 0,nop,wscale 5], length 0
+23:01:53.389192 IP something.10345 > somethingelse.52124: Flags [S.], seq 930734930, ack 2367408510, win 14480, options [mss 1460,sackOK,TS val 1128390976 ecr 1127035908,nop,wscale 5], length 0
+23:01:53.389447 IP somethingelse.52124 > something.10345: Flags [F.], seq 1, ack 1, win 457, options [nop,nop,TS val 1127035908 ecr 1128390976], length 0
+23:01:53.389622 IP something.10345 > somethingelse.52124: Flags [F.], seq 1, ack 2, win 453, options [nop,nop,TS val 1128390976 ecr 1127035908], length 0
+23:01:55.407231 IP somethingelse.52125 > something.10345: Flags [S], seq 3514707507, win 14600, options [mss 1460,sackOK,TS val 1127036413 ecr 0,nop,wscale 5], length 0
+23:01:55.407290 IP something.10345 > somethingelse.52125: Flags [S.], seq 3245503434, ack 3514707508, win 14480, options [mss 1460,sackOK,TS val 1128391481 ecr 1127036413,nop,wscale 5], length 0
+23:01:55.407505 IP somethingelse.52125 > something.10345: Flags [F.], seq 1, ack 1, win 457, options [nop,nop,TS val 1127036413 ecr 1128391481], length 0
+23:01:55.407710 IP something.10345 > somethingelse.52125: Flags [F.], seq 1, ack 2, win 453, options [nop,nop,TS val 1128391481 ecr 1127036413], length 0
+23:01:59.424451 IP somethingelse.52126 > something.10345: Flags [S], seq 133978471, win 14600, options [mss 1460,sackOK,TS val 1127037417 ecr 0,nop,wscale 5], length 0
+23:01:59.424505 IP something.10345 > somethingelse.52126: Flags [S.], seq 2662143626, ack 133978472, win 14480, options [mss 1460,sackOK,TS val 1128392485 ecr 1127037417,nop,wscale 5], length 0
+23:01:59.424701 IP somethingelse.52126 > something.10345: Flags [F.], seq 1, ack 1, win 457, options [nop,nop,TS val 1127037417 ecr 1128392485], length 0
+23:01:59.425056 IP something.10345 > somethingelse.52126: Flags [F.], seq 1, ack 2, win 453, options [nop,nop,TS val 1128392485 ecr 1127037417], length 0
+^C
+24 packets captured
+24 packets received by filter
+0 packets dropped by kernel
+% exit
+exit
+
+Script done on Fri 11 Apr 2014 11:02:13 PM EDT

@@ -1,0 +1,25 @@
+Script started on Fri 11 Apr 2014 10:49:09 PM EDT
+% sudo tcpdump tcp and port port 1[K[K[K[K[K10345
+[sudo] password for swankhad: 
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 65535 bytes
+
+
+22:50:41.729027 IP somethingelse.cs.odu.edu.52120 > something.cs.odu.edu.10345: Flags [S], seq 3122501761, win 14600, options [mss 1460,sackOK,TS val 1126867993 ecr 0,nop,wscale 5], length 0
+22:50:41.729047 IP something.cs.odu.edu.10345 > somethingelse.cs.odu.edu.52120: Flags [S.], seq 566904630, ack 3122501762, win 14480, options [mss 1460,sackOK,TS val 1128223061 ecr 1126867993,nop,wscale 5], length 0
+22:50:41.729113 IP somethingelse.cs.odu.edu.52120 > something.cs.odu.edu.10345: Flags [.], ack 1, win 457, options [nop,nop,TS val 1126867993 ecr 1128223061], length 0
+22:50:47.322952 IP somethingelse.cs.odu.edu.52120 > something.cs.odu.edu.10345: Flags [P.], seq 1:7, ack 1, win 457, options [nop,nop,TS val 1126869392 ecr 1128223061], length 6
+22:50:47.323087 IP something.cs.odu.edu.10345 > somethingelse.cs.odu.edu.52120: Flags [.], ack 7, win 453, options [nop,nop,TS val 1128224460 ecr 1126869392], length 0
+22:50:50.122578 IP something.cs.odu.edu.10345 > somethingelse.cs.odu.edu.52120: Flags [P.], seq 1:5, ack 7, win 453, options [nop,nop,TS val 1128225159 ecr 1126869392], length 4
+22:50:50.122726 IP somethingelse.cs.odu.edu.52120 > something.cs.odu.edu.10345: Flags [.], ack 5, win 457, options [nop,nop,TS val 1126870092 ecr 1128225159], length 0
+22:50:51.978725 IP somethingelse.cs.odu.edu.52120 > something.cs.odu.edu.10345: Flags [F.], seq 7, ack 5, win 457, options [nop,nop,TS val 1126870556 ecr 1128225159], length 0
+22:50:51.978874 IP something.cs.odu.edu.10345 > somethingelse.cs.odu.edu.52120: Flags [F.], seq 5, ack 8, win 453, options [nop,nop,TS val 1128225623 ecr 1126870556], length 0
+22:50:51.978984 IP somethingelse.cs.odu.edu.52120 > something.cs.odu.edu.10345: Flags [.], ack 6, win 457, options [nop,nop,TS val 1126870556 ecr 1128225623], length 0
+^C
+10 packets captured
+10 packets received by filter
+0 packets dropped by kernel
+% exit
+exit
+
+Script done on Fri 11 Apr 2014 10:50:58 PM EDT

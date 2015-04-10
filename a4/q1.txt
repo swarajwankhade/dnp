@@ -1,0 +1,15 @@
+Commands Given:
+Alice @ something.cs.odu.edu    
+		%./sock -s 10087 | ./sock -s 10088 | ./sock -s 10089
+		
+Bob @ somethingelse.cs.odu.edu    
+		%./sock something 10087 | ./sock something 10088 | ./sock something 10089
+
+
+1. Bob and Alice can to communicate with each other using this method. 
+They can communicate because of the 3 running servers and the 3 clients 
+from somethingelse.cs.odu.edu that are trying to connect these servers.
+The "|" (pipe) as seen above indicates that the output of one sock is passed to the 
+second sock and so on. For every connection from client we have a new port generated at
+random on client machine. These ports are generated at random.
+Hence the intruders find it difficult to track the communication.

@@ -1,0 +1,15 @@
+Script started on Fri 11 Apr 2014 10:42:27 PM EDT
+% sudo lsof | grep port1[K[K[K[K[K10345
+[sudo] password for swankhad: 
+sock      18340   swankhad    3u     IPv4          130407194      0t0        TCP *:10345 (LISTEN)
+sock      18340   swankhad    4u     IPv4          130407195      0t0        TCP something.cs.odu.edu:10345->somethingelse.cs.odu.edu:52111 (ESTABLISHED)
+% sudo lsof | grep 10345[K6
+sock      18341   swankhad    3u     IPv4          130407192      0t0        TCP *:10346 (LISTEN)
+sock      18341   swankhad    4u     IPv4          130407193      0t0        TCP something.cs.odu.edu:10346->somethingelse.cs.odu.edu:58904 (ESTABLISHED)
+% sudo lsof | grep 10346[K8
+sock      18342   swankhad    3u     IPv4          130410214      0t0        TCP *:10348 (LISTEN)
+sock      18342   swankhad    4u     IPv4          130410215      0t0        TCP something.cs.odu.edu:10348->somethingelse.cs.odu.edu:48337 (ESTABLISHED)
+% exit
+exit
+
+Script done on Fri 11 Apr 2014 10:46:56 PM EDT
